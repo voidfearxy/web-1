@@ -1,86 +1,116 @@
 @import url('https://fonts.googleapis.com/css?family=Orbitron');
+
+
 * {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
+    padding: 0;
+    box-sizing: border-box;
 }
+
 body {
-	background: url("background/backg.jpg");
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: center top;
-	background-color: black;
+    background: url(res/walpf3.jpg  );
+    
+    font-family: sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: black;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
 }
-.main {
-	max-width: 300px;
+
+.box {
+    padding: 10px;
+    max-width: 300px;
+    position: relative;
+}
+
+.box .fa-search{
+    padding: 10px;
+    position: absolute;
+    top: 14px;
+    left: 12px;
+    font-size: 20px;
+    color: black;
+}
+
+#search-input {
+    width: 275px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 4px;
+    font-size: 18px;
+    padding: 12px 20px 12px 40px;
+    -moz-transition: width 0.4s ease-in-out;
+    -o-transition: width 0.4s ease-in-out;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+#search-input:focus {
+    width: 100%;
+}
+
+
+p {
+    left: 3.4%;
+	margin: 0 0;
 	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	font: 16px Verdana;
+	color: #eee;
+	height: 25px;
+	top: calc( 100vh - 30px );
+	text-shadow: 0 0 2px white;
 }
+p a {
+	text-decoration: none;
+	color: #aaa;
+}
+
+
+#insta{
+    bottom: 1px;
+    left: 1px;
+    position: absolute;
+}
+
+.main { 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+
 .clock {
-	color: black;
-	text-align: center;
-	font-size: 50px;
-	font-family: Orbitron;
-}
-.element:-ms-fullscreen p {
-	visibility: visible;
-}
-.element:fullscreen {
-	background: url("background/backg.jpg");
-	background-color: black;
-	width: 100vw;
-	height: 100vh;
-}
-button {
-	color: aliceblue;
-	background:none;
-	border: none;
-	font-size: 20px;
-}
-#hour{
-	color: red;
-}
-#minute{
-	color: white;
-
-}
-#second{
-	color: yellow;
-}
-*:fullscreen {
-	cursor: none;
-}
-@media(max-width:950px){
-	.element:fullscreen {
-		background-position: top;
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-attachment: fixed;
-	}
-	body{
-		background-position: top;
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-attachment: fixed;
-	}
-}
-
-@media(min-width:950px){
-	.element:fullscreen {
-		background-position: top;
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-attachment: fixed;
-	}
-	body{
-		background-position: top;
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-attachment: fixed;
-	}
+    color: white;
+    text-align: center;
+    font-size: 60px;
+    font-family: Orbitron;
 }
 
 
+.linkbox{
+    clip-path: path('m 16 0 l 120 0 c 0 0 4 0 4 4 l 0 69 c 0 2 -2 4 -2 4 l -10 10 c 0 0 -2 2 -4 2 l -120 0 c 0 0 -4 0 -4 -4 l 0 -69 c 0 -2 2 -4 2 -4 l 10 -10 c 0 0 2 -2 4 -2');
+
+}
+.kisayol{
+    
+    top: 7%;
+    right: 1%;
+    position: absolute;
+} 
+
+.linkbox img{
+    width: 140px;
+    height: 90px;
+}
+
+
+@media only screen and (min-height: 700px) {
+    .linkbox{
+        margin: 15px;
+    }
+}
